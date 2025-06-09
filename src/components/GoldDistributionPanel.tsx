@@ -188,7 +188,7 @@ const GoldDistributionPanel = () => {
                         ) : (
                           <>
                             <Icon name="Send" size={18} className="mr-2" />
-                            Выдать {goldAmount} галд
+                            Выдать {goldAmount} золота
                           </>
                         )}
                       </Button>
