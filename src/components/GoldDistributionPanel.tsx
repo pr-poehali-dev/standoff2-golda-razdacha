@@ -13,7 +13,7 @@ interface Player {
 
 const GoldDistributionPanel = () => {
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
-  const [goldAmount, setGoldAmount] = useState("");
+  const [goldAmount, setGoldAmount] = useState("3");
   const [searchQuery, setSearchQuery] = useState("");
   const [isDistributing, setIsDistributing] = useState(false);
 
@@ -151,23 +151,23 @@ const GoldDistributionPanel = () => {
                         <Button
                           size="sm"
                           variant="outline"
-                          onClick={() => setGoldAmount("100")}
+                          onClick={() => setGoldAmount("3")}
                         >
-                          +100
+                          +3
                         </Button>
                         <Button
                           size="sm"
                           variant="outline"
-                          onClick={() => setGoldAmount("500")}
+                          onClick={() => setGoldAmount("10")}
                         >
-                          +500
+                          +10
                         </Button>
                         <Button
                           size="sm"
                           variant="outline"
-                          onClick={() => setGoldAmount("1000")}
+                          onClick={() => setGoldAmount("50")}
                         >
-                          +1000
+                          +50
                         </Button>
                       </div>
 
@@ -188,7 +188,7 @@ const GoldDistributionPanel = () => {
                         ) : (
                           <>
                             <Icon name="Send" size={18} className="mr-2" />
-                            Выдать {goldAmount} золота
+                            Выдать {goldAmount} галд
                           </>
                         )}
                       </Button>
